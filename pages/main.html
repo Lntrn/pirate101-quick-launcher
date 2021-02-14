@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Save form Data in a Text File using JavaScript</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+    	    div {
+                padding: 10px;
+                background-color: #f6f6f6;
+                overflow: hidden;
+            }
+    	    input[type=text], textarea, select {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            input[type=button]{ 
+                width: auto;
+                float: right;
+                cursor: pointer;
+                padding: 7px;
+            }
+        </style>
+        <script src="../scripts.js"></script>  
+    </head>
+    <body>
+        <div>
+            <!--Add few elements to the form-->
+            <a href="../pages/addInfo.html">Add another account.</a>
+            <h1>Cascading Dropdown Example</h1>
+
+            <form name="accountSelectionForm" id="acctSelForm">
+                <select id="selectAccount">
+                    <option value="" selected="selected">Select subject</option>
+                    <script>
+                        let foundNumber; // Line 35 // onSubmit="return loadAccount(foundNumber)"
+                        // Populate the drop down menu
+                        for(i = 0; i < Accounts.length; i++) {
+                            document.write(`<option value="${Accounts[i].username}"> ${Accounts[i].username} </option>`);
+                            console.log(Accounts[i].username)
+                        }
+                    </script>
+                </select>
+                <INPUT TYPE="button" NAME="button" Value="Click" onClick="loadAccount(this.form)">  
+            </form>
+        </div>
+    </body>
+</html>

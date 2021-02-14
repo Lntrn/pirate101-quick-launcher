@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Save form Data in a Text File using JavaScript</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+    	    div {
+                padding: 10px;
+                background-color: #f6f6f6;
+                overflow: hidden;
+            }
+    	    input[type=text], textarea, select {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            input[type=button]{ 
+                width: auto;
+                float: right;
+                cursor: pointer;
+                padding: 7px;
+            }
+        </style>
+
+        <script src="../scripts.js"></script>
+    </head>
+    <body>
+        <div>
+            <!--Add few elements to the form-->
+            <a href="../pages/main.html">Go to login.</a>
+            <div>
+                <input type="text" id="username" placeholder="Username" />
+            </div>
+            <div>
+                <input type="text" id="password" placeholder="Password" />
+            </div>
+            <div>
+                <select id="region">
+                <option selected value="">-- Account Region --</option>
+                <option value="us">US</option>
+                </select>
+            </div>
+            <!--Add to button to save the data.-->
+            <div>
+                <button type="button" id="submitaccount" onclick="saveAccount()">Save Account Info</button>
+            </div>
+        </div>
+    </body>
+</html>
