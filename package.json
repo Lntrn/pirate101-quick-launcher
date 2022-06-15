@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "electron": "^11.2.3"
+    "electron": "^13.6.6"
   },
   "name": "p101-quick-launcher",
   "version": "0.0.1",
